@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(162, 134, 134);
+    color: #333;
+}
+nav {
+    width: 100%;
+    background: #333;
+    color: rgb(15, 14, 14);
+    text-align: center;
+    position: fixed; /* Agar tetap di atas */
+    top: 0;
+    left: 0;
+
+}
+nav a {
+    color: rgb(14, 15, 15);
+    font-size: 1em;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+}
+/* Header Section */
+.header {
+    text-align: left;
+    padding: 10px 0; 
+    height: auto; /* Jangan pakai height fixed, biar fleksibel */
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-size: 1.8em; /* Cek kalau terlalu kecil, bisa dibesarin */
+    color: #333; /* Biar keliatan */
+    margin: 5px 0;
+    text-align: left;
+    position: relative;
+}
+
+.header p {
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+    position: relative;
+}
+
+
+/* Sections */
+section {
+    margin-top: 30px;
+    background: rgb(162, 134, 134);
+    width: 100%;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+
+section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Experience & History */
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    background: #8edee9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow: auto;
+}
+.skill-btn {
+    pointer-events: auto;
+}
+
